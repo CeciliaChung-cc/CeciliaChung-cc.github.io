@@ -3,27 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <link rel="stylesheet" href="style.css"> <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-<style>
-    body {
-        background-image: url('birds giffffy.gif');
-    }
-</style>
+    <title>Bird Species</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('birds giffffy.gif');
+            background-repeat: repeat;
+            background-size: auto;
+            background-position: center;
+            line-height: 1.6;
+        }
 
+        header {
+            background-color: #ecc0f1;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
 
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            opacity: 0.7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position:relative;
+            bottom:0;
+            width:100%;
+        }
+
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .article h2 {
+            color: #333;
+        }
+
+        .article img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-size: 8em;
+            color: purple;
+            text-shadow:
+                -2px -2px 0 white,
+                2px -2px 0 white,
+                -2px 2px 0 white,
+                2px 2px 0 white;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 4em;
+            }
+        }
+    </style>
 </head>
 <body>
 
+    <audio autoplay loop>
+        <source src="birdsound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
     <header>
-      
+        <h1>🐣Birds🐣</h1>
     </header>
 
-    <main>
-        <h1>Birds</h1>
-        <p>🐣🦆🦜</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="species.html">Species</a>
+        <a href="locations.html">Locations</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
+    <main>
+       
+        <article>
+            <h2>What are Birds?</h2>
+            <p>Do you know that in total there are about 11,000 species of birds described as of 2024, though one estimate of the real number places it at almost 20,000. The order passerines (perching birds) alone accounts for well over 5,000 species.</p>
+        </article>
+
+        <article>
+            <h2>Robin</h2>
+            <img src="robin.jpg" alt="Robin">
+            <p>The American robin is a migratory songbird. It is named after the European robin because of its reddish-orange breast.</p>
+        </article>
+        <article>
+            <h2>Cardinal</h2>
+            <img src="cardinal.jpg" alt="Cardinal">
+            <p>The northern cardinal is a North American bird in the genus Cardinalis. It is also known as the redbird, common cardinal or just cardinal.</p>
+        </article>
     </main>
 
-    
+    <footer>
+        <p>&copy; 2024 The Bird Watcher's Paradise</p>
+    </footer>
+
+</body>
 </html>
